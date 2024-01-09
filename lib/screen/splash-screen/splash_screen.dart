@@ -60,8 +60,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                        builder: (context) =>
-                            const SliderScreen()), // Replace with your next screen widget
+                        builder: (context) => const SliderScreen()),
                   );
                 },
                 child: const Icon(
