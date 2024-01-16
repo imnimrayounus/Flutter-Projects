@@ -1,3 +1,4 @@
+import 'package:chaicraft/screen/User-home-screen/home_screen.dart/user_dashboard.dart';
 import 'package:flutter/material.dart';
 
 class SliderScreen extends StatefulWidget {
@@ -10,11 +11,27 @@ class SliderScreen extends StatefulWidget {
 class _SliderScreenState extends State<SliderScreen> {
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Scaffold(
         body: Center(
             child: Center(
-          child: Text('data'),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text('Slider'),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const UserDashboard()),
+                  );
+                },
+                child: const Text('TextButton'),
+              )
+            ],
+          ),
         )),
       ),
     );

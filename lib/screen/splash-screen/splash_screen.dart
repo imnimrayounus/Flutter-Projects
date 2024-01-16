@@ -11,18 +11,6 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
-  void initState() {
-    super.initState();
-    _navigateToNextScreen();
-  }
-
-  _navigateToNextScreen() {
-    Future.delayed(const Duration(milliseconds: 6000), () {});
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const SliderScreen()));
-  }
-
-  @override
   Widget build(BuildContext context) {
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
