@@ -1,3 +1,4 @@
+import 'package:chaicraft/screen/User-home-screen/home_screen.dart/user_dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../slider-screen/slider_screen.dart';
@@ -48,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const SliderScreen()),
+                        builder: (context) => const UserDashboard()),
                   );
                 },
                 child: const Icon(
